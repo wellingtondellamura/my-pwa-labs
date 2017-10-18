@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="height=device-height, initial-scale=1.0">
+
+</head>
+<body style="background-color: cornflowerblue">
+
+<p id="demo" style="text-align: center;"></p>
+
+<script>
+var largura = window.innerWidth;
+var altura = window.innerHeight;
+var x = document.getElementById("demo");
+x.innerHTML = "Largura: " + largura + "px, Altura: " + altura + "px.";
+
+window.onresize = function (){
+  var largura = window.innerWidth;
+  var altura = window.innerHeight;
+  var x = document.getElementById("demo");
+  x.innerHTML = "Largura: " + largura + "px, Altura: " + altura + "px.";
+}
+</script>
+
+</body>
+</html>
