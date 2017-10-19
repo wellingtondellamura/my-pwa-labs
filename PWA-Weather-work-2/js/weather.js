@@ -93,6 +93,7 @@ weather.getTextFromCode = function(weatherCode) {
       case 17:  return "Granizo";
       case 35:  return "Chuva e Granizo";
       case 40:  return "Chuva dispersa";
+        return 'rain';
       case 3:
       case 4:
       case 37:

@@ -70,8 +70,6 @@ var getWeatherData = function(city){
    var status = card.querySelector(".weather-update");
    status.textContent = "atualizando...";
 
-   
-
    fetch(weather.getQuery(city))
       .then(function(response){
          response.json().then(function updateFromCache(json) {
